@@ -34,7 +34,6 @@ class MyQueue:
         return len(self.main_stack) == 0
 
 
-# Your MyQueue object will be instantiated and called as such:
 obj = MyQueue()
 obj.push(1)
 obj.push(2)

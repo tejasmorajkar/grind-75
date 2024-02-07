@@ -27,6 +27,7 @@ class Solution2:
 
     def coin_change(self, coins: List[int], amount: int) -> int:
         dp = [amount + 1] * (amount + 1)
+        dp[0] = 0
         result = self.helper(coins, amount, amount, dp)
         return result if result != amount + 1 else -1
 
@@ -36,5 +37,11 @@ def test_coin_change():
     amount = 7
     result = Solution().coin_change(coins, amount)
     assert result == 2, f"Test for coin change failed. Expected 2, but got {result}"
+    print("Test for coin change with bottom up dp approach executed successfully!!!")
     result = Solution2().coin_change(coins, amount)
     assert result == 2, f"Test for coin change failed. Expected 2, but got {result}"
+    print("Test for coin change with top bottom dp approach executed successfully!!!")
+
+
+if __name__ == "__main__":
+    test_coin_change()

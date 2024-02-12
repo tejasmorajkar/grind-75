@@ -40,13 +40,13 @@ class Solution:
 
 
 def test_rotting_oranges():
-    grid = [[2,1,1],[1,1,0],[0,1,1]]
+    grid = [[2, 1, 1], [1, 1, 0], [0, 1, 1]]
     actual = Solution().oranges_rotting(grid)
     assert actual == 4, f"Test for rotting oranges failed. Expected 4, but got {actual}"
-    grid = [[2,1,1],[0,1,1],[1,0,1]]
+    grid = [[2, 1, 1], [0, 1, 1], [1, 0, 1]]
     actual = Solution().oranges_rotting(grid)
     assert actual == -1, f"Test for rotting oranges failed. Expected -1, but got {actual}"
-    grid = [[0,2]]
+    grid = [[0, 2]]
     actual = Solution().oranges_rotting(grid)
     assert actual == 0, f"Test for rotting oranges failed. Expected 0, but got {actual}"
     print("Test for rotting oranges executed successfully!!!")

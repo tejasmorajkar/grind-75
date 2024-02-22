@@ -41,4 +41,3 @@ def test_string_to_integer():
 
 if __name__ == "__main__":
     test_string_to_integer()
-    
